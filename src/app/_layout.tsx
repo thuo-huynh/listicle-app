@@ -1,5 +1,10 @@
-import { Stack } from "expo-router";
+import { GlobalProvider } from '@/src/libs/global-provider';
+import { Stack } from 'expo-router';
 
 export default function RootLayout() {
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <GlobalProvider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </GlobalProvider>
+  );
 }

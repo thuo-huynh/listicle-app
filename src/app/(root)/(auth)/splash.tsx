@@ -1,4 +1,4 @@
-import Button from '@/src/components/button';
+import Button from '@/src/components/Button';
 import { images } from '@/src/constants/images';
 import { styles } from '@/src/styles/auth/splash.style';
 import { router } from 'expo-router';
